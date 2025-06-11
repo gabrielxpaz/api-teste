@@ -31,7 +31,7 @@ app.post("/api/salvar", async (req, res) => {
   const now = new Date();
 
   try {
-    const [result] = await pool.query(
+    const [result] = await connection.query(
       `INSERT INTO dados (
         yaw0, yaw1, yaw2, yaw3,
         pitch0, pitch1, pitch2, pitch3,
