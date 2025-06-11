@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT;
+const connection = require('./db'); // Assuming db.js is in the same directory
+require('dotenv').config();
 
 app.use(express.json());
 
