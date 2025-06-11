@@ -27,7 +27,7 @@ app.post("/api/salvar", async (req, res) => {
     sensorId = id;
   });
 
-  const pacienteId = 1;
+  const pacienteId = 4;
   const now = new Date();
 
   try {
